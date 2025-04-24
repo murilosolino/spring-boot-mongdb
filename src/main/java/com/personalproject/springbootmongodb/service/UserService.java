@@ -1,6 +1,7 @@
 package com.personalproject.springbootmongodb.service;
 
 import com.personalproject.springbootmongodb.domain.User;
+import com.personalproject.springbootmongodb.dto.UserDTO;
 import com.personalproject.springbootmongodb.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
