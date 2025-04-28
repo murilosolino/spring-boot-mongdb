@@ -35,9 +35,15 @@ public class Initiation implements CommandLineRunner {
 
         Post post1 = new Post(null, LocalDate.of(2023, 10, 1), "Título 1", "Conteúdo do post 1", new AuthorDTO(user1));
         Post post2 = new Post(null, LocalDate.of(2023, 10, 2), "Título 2", "Conteúdo do post 2",new AuthorDTO(user2));
-        Post post3 = new Post(null, LocalDate.of(2023, 10, 3), "Título 3", "Conteúdo do post 3",new AuthorDTO(user3));
+        Post post3 = new Post(null, LocalDate.of(2023, 10, 3), "Título 3", "Conteúdo do post 3",new AuthorDTO(user2));
 
         postRepository.saveAll(Arrays.asList(post1,post2,post3));
+
+        user1.getPosts().add(post1);
+        user2.getPosts().add(post2);
+        user2.getPosts().add(post3);
+
+        userRepository.saveAll(Arrays.asList(user1,user2));
 
     }
 }
