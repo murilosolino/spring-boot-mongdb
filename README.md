@@ -1,4 +1,4 @@
-# Spring Boot com MongoDB
+# Spring Boot com MongoDB 🍃
 
 Este projeto é uma aplicação básica utilizando Spring Boot integrada com MongoDB, demonstrando como configurar e executar uma aplicação simples com essas tecnologias.
 
